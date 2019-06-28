@@ -1,0 +1,17 @@
+---
+title: "Template Device"
+title-prefix: "User Manual"
+subtitle: "User Manual"
+author: [Martin Jäger]
+date: "2019-06-27"
+subject: "Markdown"
+keywords: [Markdown, Example]
+lang: "en"
+titlepage: true
+titlepage-text-color: "005e85"
+titlepage-rule-color: "005e85"
+titlepage-rule-height: 2
+logo: "images/libresolar-logo-lateral.pdf"
+logo-width: 200
+toc-own-page: true
+...
