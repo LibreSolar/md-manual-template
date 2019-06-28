@@ -1,0 +1,35 @@
+dist: xenial
+sudo: false
+
+cache:
+    apt: true
+
+addons:
+    apt:
+        packages:
+            - texlive
+            - texlive-latex-extra
+            - texlive-fonts-extra
+            - texlive-lang-german
+            - texlive-lang-english
+            - lmodern
+            - latex-xcolor
+            - pandoc
+
+script:
+    - cd manual
+    - make all
+    - mkdir build
+    - cp manual.html build/index.html
+    - cp manual.pdf build/
+    - cp -r template/ build/
+    - cp -r images/ build/
+
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GH_REPO_TOKEN
+    local-dir: manual/build
+    keep-history: false
+    on:
+        branch: master

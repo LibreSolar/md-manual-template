@@ -21,3 +21,12 @@ The HTML template is based on the great [mdBook](https://github.com/rust-lang-nu
 cd manual
 make html
 ```
+
+## Creating gh-pages branch
+
+   git checkout --orphan gh-pages
+   git rm -rf .
+   echo "My GitHub Page" > index.html
+   git add index.html
+   git commit -m "First pages commit"
+   git push origin gh-pages
