@@ -1,5 +1,4 @@
 dist: xenial
-sudo: false
 
 cache:
     apt: true
@@ -14,9 +13,14 @@ addons:
             - texlive-lang-english
             - lmodern
             - latex-xcolor
-            - pandoc
 
 script:
+    # debian-supplied pandoc is very old --> install manually
+    - wget https://github.com/jgm/pandoc/releases/download/2.7.3/pandoc-2.7.3-1-amd64.deb
+    - sudo dpkg -i pandoc-2.7.3-1-amd64.deb
+    - rm pandoc-2.7.3-1-amd64.deb
+
+    # build manual
     - cd manual
     - make all
     - mkdir build
