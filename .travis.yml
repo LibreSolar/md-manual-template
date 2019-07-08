@@ -16,11 +16,13 @@ addons:
 
 script:
     # debian-supplied pandoc is very old --> install manually
-    - pandoc_version="2.7.3"
+    - pandoc_version=`wget -O - https://github.com/jgm/pandoc/releases/latest 2> /dev/null | sed 's/.*\/tag\/\([^"]*\).*/\1/'`
     - pandoc_deb="pandoc-${pandoc_version}-1-amd64.deb"
     - wget "https://github.com/jgm/pandoc/releases/download/${pandoc_version}/${pandoc_deb}"
     - sudo dpkg -i ${pandoc_deb}
     - rm ${pandoc_deb}
+    # Register the installed pandoc version in the build log
+    - pandoc -v
 
     # build manual
     - cd manual
