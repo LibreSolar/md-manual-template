@@ -4,10 +4,26 @@
 all:: pdf html
 
 pdf:: metadata.yml *.md
-	pandoc metadata.yml *.md -o manual.pdf --template template/eisvogel.tex --from markdown --listings --number-sections --toc
+	pandoc \
+		metadata.yml *.md \
+		--output manual.pdf \
+		--template template/eisvogel.tex \
+		--from markdown \
+		--listings \
+		--number-sections \
+		--table-of-contents
 
 html:: metadata.yml *.md
-	pandoc metadata.yml *.md -o manual.html --template template/mdbook.html --from markdown --listings --number-sections --toc --toc-depth=2 --katex
+	pandoc \
+		metadata.yml *.md \
+		--output manual.html \
+		--template template/mdbook.html \
+		--from markdown \
+		--listings \
+		--number-sections \
+		--table-of-contents \
+		--toc-depth=2 \
+		--katex
 
 clean::
 	rm -f manual.pdf
