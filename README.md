@@ -2,7 +2,7 @@
 
 This is a template that uses [Pandoc](https://pandoc.org/) to auto-generate PDF and HTML manuals based on markdown content.
 
-It can be easily integrated into existing repositories and deployed via gh-pages.
+It can be easily integrated into existing repositories and deployed via [gh-pages](https://pages.github.com).
 
 Please install the most recent Pandoc package to get best results.
 
@@ -34,7 +34,8 @@ Example:
 
 ## Automatic deployment with Travis CI
 
-Using the configuration in `.travis.yml`, the manual is rebuilt after each commit and automatically published using GitHub pages.
+Using the configuration in [`.travis.yml`](https://github.com/LibreSolar/md-manual-template/blob/master/.travis.yml),
+	the manual is rebuilt after each commit and automatically published using GitHub pages.
 
 In a new repository you have to prepare the `gh-pages` branch in advance:
 
