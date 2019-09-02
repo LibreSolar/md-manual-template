@@ -15,7 +15,8 @@ cd manual
 make pdf
 ```
 
-Example:
+###### Examples
+
 - [Raw PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf) as deployed to gh-pages branch
 - [PDF file download](https://libre.solar/md-manual-template/manual.pdf)
 
@@ -28,7 +29,8 @@ cd manual
 make html
 ```
 
-Example:
+###### Examples
+
 - [Raw HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html) as deployed to gh-pages branch
 - [Hosted website](https://libre.solar/md-manual-template/)
 
