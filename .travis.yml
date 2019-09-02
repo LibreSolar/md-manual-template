@@ -26,12 +26,7 @@ script:
 
     # build manual
     - cd manual
-    - make all
-    - mkdir build
-    - cp manual.html build/index.html
-    - cp manual.pdf build/
-    - cp -r template/ build/
-    - cp -r images/ build/
+    - make dist
 
 deploy:
     provider: pages
