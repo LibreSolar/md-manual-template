@@ -1,5 +1,8 @@
+# NOTE This variable has to bedefined in the including file:
+#TOOL_DIR = tool
+
 OUT_DIR = build
-RESOURCES = template images
+RESOURCES = $(TOOL_DIR)/template images
 MKDIR_P = mkdir -p
 
 # Targets not producing a file with their name
@@ -11,7 +14,7 @@ pdf:: metadata.yml *.md
 	pandoc \
 		metadata.yml *.md \
 		--output manual.pdf \
-		--template template/eisvogel.tex \
+		--template $(TOOL_DIR)/template/eisvogel.tex \
 		--from markdown \
 		--listings \
 		--number-sections \
@@ -22,7 +25,7 @@ html:: metadata.yml *.md
 	pandoc \
 		metadata.yml *.md \
 		--output manual.html \
-		--template template/mdbook.html \
+		--template $(TOOL_DIR)/template/mdbook.html \
 		--from markdown \
 		--listings \
 		--number-sections \
