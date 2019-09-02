@@ -17,8 +17,9 @@ make pdf
 
 ###### Examples
 
-- [Raw PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf) as deployed to gh-pages branch
-- [PDF file download](https://libre.solar/md-manual-template/manual.pdf)
+- [This templates sample PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf)
+	generated from this repo and deployed to its `gh-pages` branch
+- [Libre-Solar PDF](https://libre.solar/md-manual-template/manual.pdf)
 
 ## HTML generation
 
@@ -31,8 +32,9 @@ make html
 
 ###### Examples
 
-- [Raw HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html) as deployed to gh-pages branch
-- [Hosted website](https://libre.solar/md-manual-template/)
+- [This templates sample HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html)
+	generated from this repo and deployed to its `gh-pages` branch
+- [Libre-Solar website](https://libre.solar/md-manual-template/)
 
 ## Automatic deployment with Travis CI
 
