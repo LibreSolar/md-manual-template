@@ -11,7 +11,8 @@ pdf:: metadata.yml *.md
 		--from markdown \
 		--listings \
 		--number-sections \
-		--table-of-contents
+		--table-of-contents \
+		--metadata date="`date -u '+%Y-%m-%d'`"
 
 html:: metadata.yml *.md
 	pandoc \
@@ -23,7 +24,8 @@ html:: metadata.yml *.md
 		--number-sections \
 		--table-of-contents \
 		--toc-depth=2 \
-		--katex
+		--katex \
+		--metadata date="`date -u '+%Y-%m-%d'`"
 
 clean::
 	rm -f manual.pdf
