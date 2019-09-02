@@ -1,3 +1,6 @@
+# Targets not producing a file with their name
+.PHONY: all pdf html clean
+
 all:: pdf html
 
 pdf:: metadata.txt *.md
