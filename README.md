@@ -2,7 +2,7 @@
 
 This is a template that uses [Pandoc](https://pandoc.org/) to auto-generate PDF and HTML manuals based on markdown content.
 
-It can be easily integrated into existing repositories and deployed via gh-pages.
+It can be easily integrated into existing repositories and deployed via [gh-pages](https://pages.github.com).
 
 Please install the most recent Pandoc package to get best results.
 
@@ -15,9 +15,11 @@ cd manual
 make pdf
 ```
 
-Example:
-- [Raw PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf) as deployed to gh-pages branch
-- [PDF file download](https://libre.solar/md-manual-template/manual.pdf)
+###### Examples
+
+- [This templates sample PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf)
+	generated from this repo and deployed to its `gh-pages` branch
+- [Libre-Solar PDF](https://libre.solar/md-manual-template/manual.pdf)
 
 ## HTML generation
 
@@ -28,13 +30,16 @@ cd manual
 make html
 ```
 
-Example:
-- [Raw HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html) as deployed to gh-pages branch
-- [Hosted website](https://libre.solar/md-manual-template/)
+###### Examples
+
+- [This templates sample HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html)
+	generated from this repo and deployed to its `gh-pages` branch
+- [Libre-Solar website](https://libre.solar/md-manual-template/)
 
 ## Automatic deployment with Travis CI
 
-Using the configuration in `.travis.yml`, the manual is rebuilt after each commit and automatically published using GitHub pages.
+Using the configuration in [`.travis.yml`](https://github.com/LibreSolar/md-manual-template/blob/master/.travis.yml),
+	the manual is rebuilt after each commit and automatically published using GitHub pages.
 
 In a new repository you have to prepare the `gh-pages` branch in advance:
 
