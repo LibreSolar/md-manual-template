@@ -2,9 +2,9 @@
 
 This is a template that uses [Pandoc](https://pandoc.org/) to auto-generate PDF and HTML manuals based on markdown content.
 
-It can be easily integrated into existing repositories and deployed via [gh-pages](https://pages.github.com).
+It can be easily integrated into existing repositories and deployed via [gh-pages](https://pages.github.com) (see below).
 
-Please install the most recent Pandoc package to get best results.
+Please install the most recent Pandoc package to get best results on your local computer.
 
 ## PDF generation
 
@@ -15,11 +15,10 @@ cd manual
 make pdf
 ```
 
-###### Examples
+### Example
 
-- [This templates sample PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf)
+- [PDF file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/manual.pdf)
 	generated from this repo and deployed to its `gh-pages` branch
-- [Libre-Solar PDF](https://libre.solar/md-manual-template/manual.pdf)
 
 ## HTML generation
 
@@ -30,11 +29,11 @@ cd manual
 make html
 ```
 
-###### Examples
+### Examples
 
-- [This templates sample HTML file](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html)
+- [HTML files](https://github.com/LibreSolar/md-manual-template/blob/gh-pages/index.html)
 	generated from this repo and deployed to its `gh-pages` branch
-- [Libre-Solar website](https://libre.solar/md-manual-template/)
+- [Hosted website](https://libre.solar/md-manual-template/) at `your-organization.github.io/repository-name` (here: libre.solar/md-manual-template/)
 
 ## Automatic deployment with Travis CI
 
